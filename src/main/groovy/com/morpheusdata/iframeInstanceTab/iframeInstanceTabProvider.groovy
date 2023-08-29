@@ -73,7 +73,7 @@ class IframeInstanceTabProvider extends AbstractInstanceTabProvider {
 	@Override
 	ContentSecurityPolicy getContentSecurityPolicy() {
 		def csp = new ContentSecurityPolicy()
-		csp.frameSrc = "https: *.${iframeUrl}"
+		csp.frameSrc = "*"
 		return csp
 	}
 }
